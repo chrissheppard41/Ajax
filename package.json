@@ -1,0 +1,59 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ajax@~1.0.0",
+        "scope": null,
+        "escapedName": "ajax",
+        "name": "ajax",
+        "rawSpec": "~1.0.0",
+        "spec": ">=1.0.0 <1.0.0",
+        "type": "range"
+      },
+      "/Users/chrissheppard/WebstormProjects/untitled/node_modules/compression"
+    ]
+  ],
+  "bugs": {
+    "url": "https://github.com/chrissheppard41/Ajax/issues"
+  },
+  "contributors": [
+    {
+      "name": "Chris Sheppard",
+      "email": "chris@elementstudio.co.uk"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~3.2.1"
+  },
+  "description": "A wrapper that you can include to excute Ajax requests",
+  "directories": {},
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "files": [
+    "LICENSE",
+    "HISTORY.md",
+    "index.js"
+  ],
+  "homepage": "https://github.com/chrissheppard41/Ajax#readme",
+  "keywords": [
+    "ajax",
+    "jQuery"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "chrissheppard41",
+      "email": "chris@elementstudio.co.uk"
+    }
+  ],
+  "name": "Ajax",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrissheppard41/Ajax"
+  },
+  "scripts": {},
+  "version": "1.0.0"
+}
