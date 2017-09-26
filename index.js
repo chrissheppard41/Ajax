@@ -87,7 +87,7 @@ function Ajax(url, type, name) {
 
             return jQuery.when(
                 jQuery.ajax(call)
-            ).done(function () { done_cb; });
+            ).done(done_cb);
         }
     };
 }
