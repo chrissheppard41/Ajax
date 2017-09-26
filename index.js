@@ -81,6 +81,7 @@ function Ajax(url, type, name) {
                 jQuery.ajax(call)
             ).done(function (a_call) {
                 console.log("INFO :: " + name + " :: Done with the call to the feed", a_call);
+                return a_call;
             });
         }
     };
