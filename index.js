@@ -48,7 +48,7 @@ function Ajax(url, type, name) {
          * @param error_cb
          * @return promise       contains the call to the parent "then" function
          */
-        exec: function (success_cb, error_cb) {
+        exec: function (done_cb, success_cb, error_cb) {
             //return the ajax promise, will hit the error method if no url has been set, else the sucess will call,
             //once finished the done command is made
 
@@ -63,6 +63,14 @@ function Ajax(url, type, name) {
                     console.log("ERROR :: " + name + " :: Error when fetching of the feed");
                 };
             }
+
+            if (typeof done_cb !== "function") {
+                done_cb = function (a_call) {
+                    console.log("INFO :: " + name + " :: Done with the call to the feed", a_call);
+                    return a_call;
+                };
+            }
+            
             var call = {
                 url: url,
                 dataType: type,
@@ -79,10 +87,7 @@ function Ajax(url, type, name) {
 
             return jQuery.when(
                 jQuery.ajax(call)
-            ).done(function (a_call) {
-                console.log("INFO :: " + name + " :: Done with the call to the feed", a_call);
-                return a_call;
-            });
+            ).done(function () { done_cb; });
         }
     };
 }
